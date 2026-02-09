@@ -1,0 +1,63 @@
+---
+import Base from '../layouts/Base.astro';
+
+const experiments = [
+  {
+    title: "n8n Workflow Automation",
+    description: "Exploring no-code automation with n8n — connecting APIs, scheduling tasks, and building workflows.",
+    tags: ["n8n", "Automation"],
+    icon: "🔄",
+  },
+  {
+    title: "Claude Code for Web Dev",
+    description: "Using AI to build and deploy websites without WordPress. This site is the proof.",
+    tags: ["AI", "Claude", "Web Dev"],
+    icon: "🤖",
+  },
+  {
+    title: "Astro + Tailwind Stack",
+    description: "Learning modern static site generation. Fast, free, and no database needed.",
+    tags: ["Astro", "Tailwind"],
+    icon: "🚀",
+  },
+];
+---
+
+<Base title="Lab — Try AI" description="Experiments with AI, automation, and modern web tools">
+  <section class="py-12">
+    <h1 class="text-4xl font-bold">Lab / Try AI</h1>
+    <p class="mt-4 max-w-2xl text-lg text-gray-600">
+      Things I'm experimenting with. AI tools, automation, and new ways of building
+      on the web. Learning in public.
+    </p>
+
+    <div class="mt-10 space-y-6">
+      {experiments.map((exp) => (
+        <div class="flex gap-5 rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
+          <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gray-100 text-2xl">
+            {exp.icon}
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">{exp.title}</h3>
+            <p class="mt-1 text-sm text-gray-600">{exp.description}</p>
+            <div class="mt-3 flex gap-2">
+              {exp.tags.map((tag) => (
+                <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 p-8">
+      <h2 class="text-xl font-semibold">What I'm learning</h2>
+      <p class="mt-2 text-gray-600">
+        You don't need to be a developer to build real things with AI.
+        Claude Code writes the code. I bring the ideas and the curiosity.
+      </p>
+    </div>
+  </section>
+</Base>

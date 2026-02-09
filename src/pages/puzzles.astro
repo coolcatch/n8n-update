@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+
+const books = [
+  {
+    title: "Crossword Collection Vol. 1",
+    description: "50 themed crossword puzzles ranging from beginner to intermediate.",
+    category: "Crosswords",
+    status: "Available",
+  },
+  {
+    title: "Logic Puzzles for Sharp Minds",
+    description: "Brain-bending logic grids and deduction challenges.",
+    category: "Logic",
+    status: "Coming Soon",
+  },
+  {
+    title: "Word Search Adventures",
+    description: "Relaxing word search puzzles with fun hidden themes.",
+    category: "Word Search",
+    status: "Available",
+  },
+];
+---
+
+<Base title="Puzzle Book Library" description="Browse my collection of puzzle books">
+  <section class="py-12">
+    <h1 class="text-4xl font-bold">Puzzle Book Library</h1>
+    <p class="mt-4 max-w-2xl text-lg text-gray-600">
+      A growing collection of puzzle books I'm building. Browse what's available
+      and what's coming next.
+    </p>
+
+    <!-- Filter tabs -->
+    <div class="mt-8 flex gap-3">
+      <span class="rounded-full bg-blue-100 px-4 py-1 text-sm font-medium text-blue-700">All</span>
+      <span class="rounded-full bg-gray-100 px-4 py-1 text-sm text-gray-600 hover:bg-gray-200 cursor-pointer">Crosswords</span>
+      <span class="rounded-full bg-gray-100 px-4 py-1 text-sm text-gray-600 hover:bg-gray-200 cursor-pointer">Logic</span>
+      <span class="rounded-full bg-gray-100 px-4 py-1 text-sm text-gray-600 hover:bg-gray-200 cursor-pointer">Word Search</span>
+    </div>
+
+    <!-- Book grid -->
+    <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {books.map((book) => (
+        <div class="rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between">
+            <span class="rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-700">
+              {book.category}
+            </span>
+            <span class={`text-xs font-medium ${book.status === 'Available' ? 'text-green-600' : 'text-amber-600'}`}>
+              {book.status}
+            </span>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold">{book.title}</h3>
+          <p class="mt-2 text-sm text-gray-600">{book.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-12 rounded-lg bg-gray-50 p-6 text-center">
+      <p class="text-gray-600">More puzzle books are in the works.</p>
+      <a href="/contact" class="mt-2 inline-block text-blue-600 hover:underline">
+        Get notified when new books drop &rarr;
+      </a>
+    </div>
+  </section>
+</Base>
