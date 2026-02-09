@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Home — MySite">
+  <!-- Hero -->
+  <section class="py-16 text-center">
+    <h1 class="text-5xl font-bold tracking-tight">
+      Build sites <span class="text-blue-600">fast</span>.
+    </h1>
+    <p class="mx-auto mt-4 max-w-xl text-lg text-gray-600">
+      No WordPress. No page builders. Just clean code, instant deploys,
+      and a site you actually own.
+    </p>
+    <a
+      href="/about"
+      class="mt-8 inline-block rounded-lg bg-blue-600 px-6 py-3 text-white hover:bg-blue-700"
+    >
+      Learn more &rarr;
+    </a>
+  </section>
+
+  <!-- Features -->
+  <section class="grid gap-8 py-12 md:grid-cols-3">
+    <div class="rounded-lg border border-gray-200 p-6">
+      <h3 class="text-lg font-semibold">Lightning Fast</h3>
+      <p class="mt-2 text-sm text-gray-600">
+        Static HTML ships to the browser. No heavy PHP or database queries slowing you down.
+      </p>
+    </div>
+    <div class="rounded-lg border border-gray-200 p-6">
+      <h3 class="text-lg font-semibold">Easy to Change</h3>
+      <p class="mt-2 text-sm text-gray-600">
+        Ask Claude Code to add sections, change colors, or build new pages. Done in seconds.
+      </p>
+    </div>
+    <div class="rounded-lg border border-gray-200 p-6">
+      <h3 class="text-lg font-semibold">Free Hosting</h3>
+      <p class="mt-2 text-sm text-gray-600">
+        Deploy to Netlify or Vercel for free. Push to git and your site is live.
+      </p>
+    </div>
+  </section>
+</Base>
