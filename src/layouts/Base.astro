@@ -4,7 +4,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "A fast, modern website" } = Astro.props;
+const { title, description = "BrainFun Puzzles — Puzzle books, AI experiments, and more" } = Astro.props;
 ---
 
 <!doctype html>
@@ -19,14 +19,14 @@ const { title, description = "A fast, modern website" } = Astro.props;
   <body class="min-h-screen bg-white text-gray-900">
     <nav class="border-b border-gray-200 px-6 py-4">
       <div class="mx-auto flex max-w-5xl items-center justify-between">
-        <a href="/" class="text-xl font-bold">MySite</a>
+        <a href="/" class="text-xl font-bold">BrainFun <span class="text-purple-600">Puzzles</span></a>
         <div class="flex gap-6 text-sm">
-          <a href="/" class="hover:text-blue-600">Home</a>
-          <a href="/puzzles" class="hover:text-blue-600">Puzzles</a>
-          <a href="/lab" class="hover:text-blue-600">Lab</a>
-          <a href="/blog" class="hover:text-blue-600">Blog</a>
-          <a href="/about" class="hover:text-blue-600">About</a>
-          <a href="/contact" class="hover:text-blue-600">Contact</a>
+          <a href="/" class="hover:text-purple-600">Home</a>
+          <a href="/puzzles" class="hover:text-purple-600">Puzzles</a>
+          <a href="/lab" class="hover:text-purple-600">Lab</a>
+          <a href="/blog" class="hover:text-purple-600">Blog</a>
+          <a href="/about" class="hover:text-purple-600">About</a>
+          <a href="/contact" class="hover:text-purple-600">Contact</a>
         </div>
       </div>
     </nav>
@@ -36,7 +36,7 @@ const { title, description = "A fast, modern website" } = Astro.props;
     </main>
 
     <footer class="border-t border-gray-200 px-6 py-8 text-center text-sm text-gray-500">
-      <p>&copy; {new Date().getFullYear()} MySite. Built with Astro + Tailwind.</p>
+      <p>&copy; {new Date().getFullYear()} BrainFun Puzzles.</p>
     </footer>
   </body>
 </html>

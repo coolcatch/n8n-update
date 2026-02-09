@@ -2,44 +2,53 @@
 import Base from '../layouts/Base.astro';
 ---
 
-<Base title="Home — Welcome">
+<Base title="BrainFun Puzzles — Puzzle Books, AI Lab & Blog">
   <!-- Hero -->
-  <section class="py-16 text-center">
-    <h1 class="text-5xl font-bold tracking-tight">
-      Hi, I'm <span class="text-blue-600">building things</span>.
+  <section class="py-20 text-center">
+    <p class="text-sm font-medium uppercase tracking-widest text-purple-600">Welcome to</p>
+    <h1 class="mt-3 text-5xl font-bold tracking-tight md:text-6xl">
+      BrainFun <span class="text-purple-600">Puzzles</span>
     </h1>
-    <p class="mx-auto mt-4 max-w-xl text-lg text-gray-600">
-      Puzzle books, AI experiments, and learning in public.
-      This is my corner of the internet.
+    <p class="mx-auto mt-5 max-w-xl text-lg text-gray-600">
+      Puzzle books for curious minds. Plus AI experiments,
+      automation adventures, and everything I'm learning along the way.
     </p>
+    <div class="mt-8 flex justify-center gap-4">
+      <a href="/puzzles" class="rounded-lg bg-purple-600 px-6 py-3 text-white hover:bg-purple-700 transition-colors">
+        Browse Puzzles
+      </a>
+      <a href="/blog" class="rounded-lg border border-gray-300 px-6 py-3 hover:border-purple-300 hover:text-purple-600 transition-colors">
+        Read the Blog
+      </a>
+    </div>
   </section>
 
   <!-- What I'm up to -->
   <section class="grid gap-6 py-12 md:grid-cols-2">
     <a href="/puzzles" class="group rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
       <span class="text-3xl">🧩</span>
-      <h3 class="mt-3 text-lg font-semibold group-hover:text-blue-600">Puzzle Book Library</h3>
+      <h3 class="mt-3 text-lg font-semibold group-hover:text-purple-600">Puzzle Book Library</h3>
       <p class="mt-2 text-sm text-gray-600">
         A growing collection of crossword, logic, and word search puzzle books I'm creating.
       </p>
     </a>
     <a href="/lab" class="group rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
       <span class="text-3xl">🧪</span>
-      <h3 class="mt-3 text-lg font-semibold group-hover:text-blue-600">Lab / Try AI</h3>
+      <h3 class="mt-3 text-lg font-semibold group-hover:text-purple-600">Lab / Try AI</h3>
       <p class="mt-2 text-sm text-gray-600">
         Experiments with n8n, Claude Code, and modern web tools. Learning what's possible.
       </p>
     </a>
     <a href="/blog" class="group rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
       <span class="text-3xl">✍️</span>
-      <h3 class="mt-3 text-lg font-semibold group-hover:text-blue-600">Blog</h3>
+      <h3 class="mt-3 text-lg font-semibold group-hover:text-purple-600">Blog</h3>
       <p class="mt-2 text-sm text-gray-600">
         Writing about what I'm learning — AI, automation, building without code, and more.
       </p>
     </a>
     <a href="/about" class="group rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow">
       <span class="text-3xl">👋</span>
-      <h3 class="mt-3 text-lg font-semibold group-hover:text-blue-600">About Me</h3>
+      <h3 class="mt-3 text-lg font-semibold group-hover:text-purple-600">About Me</h3>
       <p class="mt-2 text-sm text-gray-600">
         Who I am, what I'm working on, and how to get in touch.
       </p>
