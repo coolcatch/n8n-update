@@ -3,6 +3,7 @@ backend:
   repo: coolcatch/n8n-update
   branch: claude/fast-website-deployment-r4AuJ
   auth_type: pkce
+  app_id: Iv23liYs8oNZHn7eLrGw
 
 media_folder: public/images
 public_folder: /images
