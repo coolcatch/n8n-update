@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: coolcatch/n8n-update
+  branch: claude/fast-website-deployment-r4AuJ
+  auth_type: pkce
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: blog
+    label: "Blog Posts"
+    folder: src/content/blog
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: books
+    label: "Puzzle Books"
+    file: src/data/books.json
+    description: "Manage your puzzle book collection"
+    fields:
+      - label: "Books"
+        name: "books"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Category", name: "category", widget: "string", default: "Sudoku" }
+          - { label: "Amazon Link", name: "link", widget: "string" }

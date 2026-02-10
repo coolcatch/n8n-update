@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+      "title": "Amazing Sudoku: 120 Sudoku puzzles",
+      "description": "Unplug and unwind with 120 all-new sudoku puzzles. Features 30 easy, 60 medium, and 30 hard puzzles. One puzzle per page with space to work.",
+      "category": "Sudoku",
+      "link": "https://www.amazon.com/dp/B0GLZ3Y85P"
+    },
+    {
+      "title": "Super Fun SUDOKU Volume 2",
+      "description": "120 hand-crafted puzzles designed for casual players who want a relaxing brain workout. 30 easy, 60 medium, 30 hard. Includes complete solutions.",
+      "category": "Sudoku",
+      "link": "https://www.amazon.com/dp/B0GLZBBB5L"
+    }
+  ]
+}
